@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "portafoliorodolfo-355a7"
+  },
+  "targets": {
+    "portafoliorodolfo-355a7": {
+      "hosting": {
+        "rodolfo-portafolio": [
+          "portafoliorodolfo-355a7"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.wrapper{
+    position: relative;            
+}
+
+.link{    
+    color:rgb(0, 8, 29);
+    text-decoration: none;
+    border-radius: 50%;
+    background: #FFCC14;
+    border-radius: 50%;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    padding-inline: 15px;
+}
+
+.btn{
+    position: relative;
+    background: white;
+    color: rgb(0, 8, 29);
+    border-radius: 50%;        
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.item{
+    position: absolute;
+    list-style: none;  
+    top: 0;     
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+i{
+    font-size: 3rem;   
+}
+
+.btn i{
+    font-size: 3rem;
+    opacity: 1;
+    background: none;
+    padding: 0;
+}
+
+p{
+    font-family: dinpro-regular;
+    text-transform: uppercase;
+    color: white;
+}

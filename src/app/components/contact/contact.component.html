@@ -1,0 +1,86 @@
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row py-5">
+
+            <h2 class="text-center mb-5">Contactame</h2>
+
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col text-center">
+                        <social></social>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 pt-5 pt-lg-0">
+                <div class="row mt-5 mt-lg-0">
+                    <div class="col-lg-8">
+                        <form (ngSubmit)="onSubmit()" [formGroup]="miFormulario">
+                            
+                            <div class="mb-3">                                
+                                <input type="text" class="form-control" formControlName="name" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                                <span class="form-text text-danger" *ngIf="validCap('name')">
+                                        Campo obligatorio minimo 4 caracteres
+                                </span>
+                            </div>
+                              
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" formControlName="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2">@email.com</span>
+                                </div>
+                                <span class="form-text text-danger" *ngIf="validCap('email')">
+                                    Campo obligatorio email invalido
+                                </span>
+                            </div>
+                                                            
+                            <div class="mb-3">                                
+                                <input type="text" class="form-control" formControlName="reason" placeholder="Motivo" aria-describedby="basic-addon3">
+                                <span class="form-text text-danger" *ngIf="validCap('reason')">
+                                    Indique el motivo de contacto
+                                </span>
+                            </div>
+                              
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text">Opcional</span>
+                                    <input type="number" class="form-control" formControlName="quotation" placeholder="Cotización" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <span class="form-text text-danger" *ngIf="validCap('quotation')">
+                                    solo valores numericos positivos
+                                </span>
+                            </div>
+                                                           
+                              <div class="input-group">
+                                <span class="input-group-text">Detalles</span>
+                                <textarea class="form-control" formControlName="details" aria-label="With textarea"></textarea>
+                              </div>
+
+                              <button class="btn mt-3" type="submit" data-bs-toggle="modal" href="#tanks" [disabled]="miFormulario.invalid" >Enviar </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="tanks" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalToggleLabel">Mensaje enviado</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">       
+            <p>Me contacteré con usted a la brevedad posible</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  

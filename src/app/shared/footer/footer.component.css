@@ -1,0 +1,12 @@
+.container-fluid{
+    background-color: black;
+    box-shadow: 0px 20px 10px 15px white;
+    padding-block: 10px;
+}
+
+p{
+    color: white;
+    font-family: dinpro-regular;
+    font-size: .8rem;
+    margin: 0;
+}

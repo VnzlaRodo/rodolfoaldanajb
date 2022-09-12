@@ -1,0 +1,32 @@
+.container-fluid{
+    background:  rgb(0, 8, 29);
+  
+}
+
+h2{
+    font-family: cyber-3d;
+    color: white;
+}
+
+.btn{
+    background: #FFCC14;
+}
+
+/*modal*/
+
+a{
+    background: white;
+    font-family: dinpro-regular;
+}
+
+.modal-content{
+    background-color: rgb(0,8,29);
+    border: solid 1px yellow;
+    color: white;
+}
+
+
+
+h4{
+    font-family: dinpro-regular;
+    }

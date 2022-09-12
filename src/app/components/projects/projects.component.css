@@ -1,0 +1,9 @@
+.container-fluid {
+    background-color: rgb(0, 8, 29);
+}
+
+h2{
+    font-family: dinpro-regular;
+    color: white;
+    transition: .4s;
+}

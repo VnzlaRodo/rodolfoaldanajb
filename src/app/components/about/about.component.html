@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row about">
+            <div class="col-12 col-lg-6 py-5 py-lg-0 align-self-center">
+                <h1 class="text-light d-none d-lg-block">Rodolfo Aldana</h1>
+
+                <h2 class="text-light text-center d-lg-none">Rodolfo Aldana</h2>
+                
+                <modal *ngFor="let item of about" [item]="item"></modal>
+
+            </div>
+            <div class="col-12 col-lg-6 align-self-center">
+                <app-swiper-cubo (idSwiper)="idSwiperactual($event)"></app-swiper-cubo>
+            </div>
+        </div>
+
+    </div>   
+</div>

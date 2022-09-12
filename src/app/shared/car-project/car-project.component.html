@@ -1,0 +1,12 @@
+<div class="text-light" [routerLink]="['/proyecto/',project.guid]" (pointerenter)="enviar(project.nombre)">
+    <div class="p-1 p-lg-3 text-card">
+        <h2>{{ project.nombre | uppercase }}</h2>
+        <p>{{ project.year }}</p>
+        <p>{{ project.descripcion }}</p>
+    </div>
+    <div class="img-card">
+        <img src="{{ project.img }}" alt="">
+    </div>
+</div>
+
+

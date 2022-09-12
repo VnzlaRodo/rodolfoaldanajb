@@ -1,0 +1,48 @@
+@font-face {
+    font-family: dinpro-light;
+    src: url('../assets/font/poppins/poppins-light.ttf');
+}
+    
+@font-face {
+    font-family: dinpro-regular;
+    src: url('../assets/font/poppins/poppins-regular.ttf');
+}
+
+@font-face {
+    font-family: cyber;
+    src: url('../assets/font/cyber/CyberPrincess.ttf');
+}
+
+@font-face {
+    font-family: cyber-3d;
+    src: url('../assets/font/cyber/CyberPrincess3D.ttf');
+}
+
+@font-face {
+    font-family: cyber-italic;
+    src: url('../assets/font/cyber/CyberPrincess-Italic.ttf');
+}
+
+@font-face {
+    font-family: cyber-italic-3d;
+    src: url('../assets/font/cyber/CyberPrincess3D-Italic.ttf');
+}
+
+@font-face {
+    font-family: cyber-filled;
+    src: url('../assets/font/cyber/CyberPrincess3DFilled.ttf');
+}
+
+@font-face {
+    font-family: cyber-filled-italic;
+    src: url('../assets/font/cyber/CyberPrincess3DFilled-Italic.ttf');
+}
+
+.container-fluid{
+    overflow: hidden;
+
+}
+
+.row{
+    margin: 0;
+}

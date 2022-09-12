@@ -1,0 +1,32 @@
+<div class="container-fluid proyecto animated fadeIn">
+
+    <img class="img-fluid w-25 img-fondo" src="assets/img/4136918.jpg" alt="https://www.freepik.es/vector-gratis/ilustracion-concepto-actividad-desarrollador_9319773.htm">
+
+    <div class="row p-5 animated fadeIn">
+
+        <div class="col-sm-2"></div>
+        <div class="col-12 col-sm-8">
+            <div class="card">
+                <h2 class="card-header">
+                    {{ project.nombre |uppercase }}
+                </h2>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-4">
+                        <p>{{ project.detalles }}</p>
+
+                        <a class="url px-3 py-1" href="{{project.url}}" *ngIf="project.url">Ver Online</a>
+                    </blockquote>
+                    <div class="row">
+                        <div class="col-12 text-center captura" *ngFor="let cap of project.capturas">
+                            <img class="img-fluid" src="{{ cap }}" alt="RodoCode">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+
+    </div>
+
+</div>

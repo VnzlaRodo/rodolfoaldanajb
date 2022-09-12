@@ -1,0 +1,21 @@
+<swiper (paginationUpdate)="paginate($event)"
+    [effect]="'cube'"
+    [grabCursor]="true"
+    [cubeEffect]="{
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94
+    }"
+    [pagination]="true"
+    class="mySwiper"
+    
+  >
+    <ng-template swiperSlide 
+    ><img src="assets/img/about/dev.jpg" /></ng-template
+    ><ng-template swiperSlide *ngFor="let item of aboutMe"
+    ><img src="{{ item.url }}" /></ng-template
+    >
+  </swiper>
+
+  

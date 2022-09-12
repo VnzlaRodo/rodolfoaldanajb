@@ -1,0 +1,55 @@
+h2{
+    font-family: dinpro-regular;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div{
+    position: relative;
+    cursor: pointer;
+    display: inline-grid;
+    overflow: hidden;
+    border-radius: 25px;
+    border: groove 2px rgb(247, 247, 6, 0.7);
+    box-shadow: 0px 0px 3px rgb(247, 247, 6, 0.7);
+}
+
+div img{
+    width: 100%;
+    height: auto;
+}
+
+div::after{
+    content: "";
+    position: absolute;
+    inset: -1px;
+    --_g: conic-gradient(at 50% 25%, rgb(0 0 0/38%) 75%, #000 0) no-repeat;
+    background: var(--_g) 0 calc(34% - var(--_p, 0%)) / 50.1% 400%, var(--_g) 100% calc(100% - var(--_p, 0%)) / 50.1% 400%;
+    transition: 0.5s linear;
+    
+}
+
+div.alt::after{
+    transform: scale(-1);
+    z-index: 10;
+}
+
+div:hover::after{
+    --_p: 134%;
+}
+
+.text-card{
+    height: 200px;
+}
+
+.text-card,.img-card{
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+
+.img-card{
+    height: 200px;
+    overflow-y: hidden;
+}
+

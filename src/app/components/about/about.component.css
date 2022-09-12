@@ -1,0 +1,21 @@
+.container-fluid {
+    background-color: rgb(0, 8, 29);
+}
+
+.about{
+   
+    padding-block: 110px;
+}
+
+h1{
+    font-family: cyber-italic-3d;
+    font-size: 4rem;    
+}
+h2{
+    font-family: cyber-italic-3d;
+    font-size: 2rem;   
+}
+
+div{
+    font-family: dinpro-regular;
+}
